@@ -10,7 +10,7 @@ use Psr\Log\LoggerInterface;
 final class Nircmd
 {
 	public function __construct ( 
-		private string $nircmd = 'nircmdc.exe', 
+		private string $nircmd = __DIR__ . '/nircmdc.exe', 
 		private ?LoggerInterface $logger = null
 	) 
 	{
@@ -29,7 +29,7 @@ final class Nircmd
 	{
 		$output = [];
 		
-		$string = rtrim ( "{$this -> nircmd} {$name} " . implode ( ' ', $arguments ) );
+		$string = rtrim ( "\"{$this -> nircmd}\" {$name} " . implode ( ' ', $arguments ) );
 		
 		exec ( $string, $output );
 		
