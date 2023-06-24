@@ -9,7 +9,7 @@ Example:
 ```php
 $cmd = new Nouvu\Windows\Nircmd;
 
-$cmd -> savescreenshot( 'test.png', 496, 308, 474, 503 );
+$cmd -> savescreenshot( filename:'test.png', x:496, y:308, w:474, h:503 );
 ```
 
 ***
