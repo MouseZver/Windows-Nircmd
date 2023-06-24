@@ -5,6 +5,13 @@ Computer management in Windows OC using the Facade API in PHP
 
 > composer require nouvu/windows-nircmd
 
+Example:
+```php
+$cmd = new Nouvu\Windows\Nircmd;
+
+$cmd -> savescreenshot( 'test.png', 496, 308, 474, 503 );
+```
+
 ***
 
 [Documentation...](https://nircmd.nirsoft.net/)
