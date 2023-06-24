@@ -10,7 +10,7 @@ use Psr\Log\LoggerInterface;
 final class Nircmd
 {
 	public function __construct ( 
-		private string $nircmd = 'nircmd.exe', 
+		private string $nircmd = 'nircmdc.exe', 
 		private ?LoggerInterface $logger = null
 	) 
 	{
